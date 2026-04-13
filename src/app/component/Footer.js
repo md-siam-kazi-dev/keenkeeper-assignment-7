@@ -13,9 +13,9 @@ const Footer = () => {
             <div className="flex flex-col justify-center items-center gap-4 mt-4">
                 <h3 className="text-xl font-bold text-white">Social Links</h3>
                 <div className="flex gap-2 ">
-                    <Image src='/assets/facebook.png' width="40" height= "40"></Image>
-                    <Image src='/assets/twitter.png' width="40" height= "40"></Image>
-                    <Image src='/assets/instagram.png' width="40" height= "40"></Image>
+                    <Image src='/assets/facebook.png' width="40" height= "40" alt="twt"></Image>
+                    <Image src='/assets/twitter.png' width="40" height= "40" alt="fb"></Image>
+                    <Image src='/assets/instagram.png' width="40" height= "40" alt="ig"></Image>
                 </div>
             </div>
         </div>

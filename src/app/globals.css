@@ -3,6 +3,11 @@
 
 
 @layer components {
+
+  /* .common css  */
+  .bg-r{
+    @apply bg-[#244D3F];
+  }
   /* NavBar style  */
 
   .nav-parent{
@@ -19,4 +24,6 @@
   .container-div{
     @apply w-19/20 max-w-[1340px] mx-auto;
   }
+
+
 }
