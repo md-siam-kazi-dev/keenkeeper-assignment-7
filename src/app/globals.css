@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+
+@layer components {
+  /* NavBar style  */
+
+  .nav-parent{
+    @apply py-4 w-full border-b border-b-[#dddddd80];
+  }
+  .nav-child{
+    @apply w-19/20 mx-auto max-w-[1500px] flex flex-col sm:flex-row justify-between items-center gap-2;
+  }
+  .nav-heading{
+    @apply font-bold text-2xl text-[#1F2937];
+  }
+
+  /* for container style  */
+  .container-div{
+    @apply w-19/20 max-w-[1340px] mx-auto;
+  }
+}
