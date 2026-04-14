@@ -1,6 +1,7 @@
 'use client'
 import { useContext,use } from "react";
 import { DataContext } from "../lib/context/DataContext";
+import { BlurFade } from "@/components/ui/blur-fade";
 
 
 const HomeDashBoard = () => {
@@ -19,7 +20,8 @@ const HomeDashBoard = () => {
      }
    });
   return (
-    <div className="grid grid-cols-2 container-div gap-1 mt-10 sm:gap-2 lg:gap-4 lg:mt-15 md:grid-cols-4">
+    <BlurFade delay={0.4} once>
+        <div className="grid grid-cols-2 container-div gap-1 mt-10 sm:gap-2 lg:gap-4 lg:mt-15 md:grid-cols-4">
         <div className="flex p-6 sm:p-8 justify-center items-center gap-4 flex-col rounded-xl border-gray-100 border shadow-md">
             <span className="text-[#244D3F] font-semibold text-[32px]">{profils.length}</span>
             <p className="text-[18px] text-gray-600">Total Friends</p>
@@ -51,6 +53,7 @@ const HomeDashBoard = () => {
         </div>
 
     </div>
+    </BlurFade>
   )
 }
 

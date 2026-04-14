@@ -15,7 +15,7 @@ const Friend = ({params}) => {
         const res = await fetch('/data.json');
         const data = await res.json();
         let profile =  data.find(p => p.id === parseInt(id));
-        console.log(profile)
+        
         setProfileData(profile)
        
 
@@ -27,7 +27,7 @@ const Friend = ({params}) => {
   return (
     <div>
        
-       {profileData ? <FriendDetailsPage profileData={profileData} /> :<FriendLoading />}
+       {profileData.name ? <FriendDetailsPage profileData={profileData} /> :<FriendLoading />}
 
      
 

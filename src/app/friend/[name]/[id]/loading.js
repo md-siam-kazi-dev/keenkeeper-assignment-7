@@ -2,9 +2,9 @@ import { Spinner } from "@heroui/react";
 
 export default function FriendLoading (){
     return(
-        <div className="w-full flex justify-center items-center h-[300px]">
+        <div className="w-full flex justify-center items-center h-[70vh]">
             
-        <Spinner size="xl" />
+        <Spinner size="xl" color="black"/>
         
       
         </div>

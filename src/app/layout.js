@@ -5,6 +5,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Footer from "./component/Footer";
 import Provider from "./lib/provider/provider";
+import { ToastContainer } from "react-toastify";
 
 config.autoAddCss = false;
 
@@ -23,7 +24,7 @@ export const metadata = {
   description: "KeenKeeper",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, Zoom }) {
   return (
     <html
       lang="en"
@@ -37,6 +38,21 @@ export default function RootLayout({ children }) {
           <NavBar />
           {children}
           <Footer />
+
+          <ToastContainer
+            position="top-center"
+            autoClose={3001}
+            limit={3}
+            hideProgressBar
+            newestOnTop={false}
+            closeOnClick={false}
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+            transition={Zoom}
+          />
         </Provider>
       </body>
     </html>
