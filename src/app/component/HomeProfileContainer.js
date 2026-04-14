@@ -22,9 +22,9 @@ const HomeProfileContainer = () => {
   }, []);
 
   return (<> 
-    <BlurFade delay={0.4}><div className="container-div mt-10 mb-10">
+    <div className="container-div mt-10 mb-10">
         <h2 className="text-2xl font-bold ">Your Friends</h2>
-    </div></BlurFade>
+    </div>
     {profils.length != 0 ?<div className="container-div grid grid-cols-1 sm:grid-cols-2 mb-20 lg:grid-cols-4 gap-3 mt-10">
         
         {profils.map(profile => {
@@ -32,8 +32,8 @@ const HomeProfileContainer = () => {
             
             return (
                 
-                    <Link href={`/friend/${profileLink}/${profile.id}`}  className="text-center  rounded-lg shadow-md  justify-center border border-gray-100 gap-1 sm:gap-2 xl:gap-4 py-6">
-                        <BlurFade key={profile.id} delay={0.5} inView>
+                    <Link key={profile.id} href={`/friend/${profileLink}/${profile.id}`}  className="text-center  rounded-lg shadow-md  justify-center border border-gray-100 gap-1 sm:gap-2 xl:gap-4 py-6">
+                        
                     <div className="h-30 w-30 rounded-full overflow-hidden flex justify-center items-center mx-auto  object-cover">
                         <Image src={profile.picture} height={120} width={120} alt={profile.name} className="mx-auto object-cover h-30 rounded-full "></Image>
                     </div>
@@ -54,10 +54,9 @@ const HomeProfileContainer = () => {
 
 
                     <div className={`${profile.status_bg} w-fit text-xs mt-3 px-2 py-1 rounded-md mx-auto text-white font-semibold`}>{profile.status}</div>
-                    </BlurFade>
 
                 </Link>
-              
+                
             )
         })}
     </div>:<FriendLoading />}

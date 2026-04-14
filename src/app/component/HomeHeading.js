@@ -16,18 +16,18 @@ const HomeHeading = () => {
 
       </h1>
 
-      <BlurFade delay={0.3} once>
+      
         <p className="o text-gray-500 w-8/10 mx-auto md:w-full">
         Your personal shelf of meaningful connections. Browse, tend, and nurture
         the relationships that matter most.
       </p>
-      </BlurFade>
       
-     <BlurFade delay={0.33} once>
+      
+     
        <button className="bg-r p-3 mt-4 rounded-[4px] text-white font-semibold">
         <FontAwesomeIcon icon={faPlus} /> Add a Friend
       </button>
-     </BlurFade>
+     
     </div>
   );
 };
