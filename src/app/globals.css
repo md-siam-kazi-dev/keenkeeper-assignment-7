@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "@heroui/styles"; 
 
 
 
@@ -7,6 +8,9 @@
   /* .common css  */
   .bg-r{
     @apply bg-[#244D3F];
+  }
+  .text-r{
+    @apply text-[#244D3F];
   }
   /* NavBar style  */
 
@@ -23,7 +27,21 @@
   /* for container style  */
   .container-div{
     @apply w-19/20 max-w-[1340px] mx-auto;
-  }
 
+  
+  }
+  .tag-container{
+    @apply flex w-full justify-center gap-0.5 text-xs font-medium mt-3;
+  }
+   /* Friend details  */
+   .FDPbtn{
+    @apply w-full text-center font-semibold text-[16px] py-3 shadow-[0_0_5px_rgba(0,0,0,0.2)] flex items-center justify-center;
+   }
+   .FDP-profile{
+    @apply  flex w-fit shadow-[0_0_5px_rgba(0,0,0,0.2)] rounded-lg items-center flex-col p-6;
+   }
+   .status-div{
+    @apply w-fit text-xs mt-3 px-2 py-1 rounded-md mx-auto text-white font-semibold;
+   }
 
 }
