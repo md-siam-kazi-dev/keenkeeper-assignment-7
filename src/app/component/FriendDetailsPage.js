@@ -1,12 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { toast } from "react-toastify";
 import Image from "next/image";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { DataContext } from "../lib/context/DataContext";
 
 const FriendDetailsPage = ({ profileData }) => {
   const { historySetter} = useContext(DataContext);
-  window.scrollTo(1,1)
+  useEffect(() => {
+    window.scrollTo(0,0);
+  })
 
 //   helper function 
 
