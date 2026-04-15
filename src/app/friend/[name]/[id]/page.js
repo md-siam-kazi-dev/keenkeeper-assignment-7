@@ -5,7 +5,7 @@ const Friend = () => {
     
     
   return (
-    <div className="mt-30 min-h-[60vh]">
+    <div className="mt-30 container-div min-h-[60vh]">
        
        
        <FriendPage />

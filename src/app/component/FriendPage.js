@@ -25,7 +25,7 @@ const FriendPage = () => {
   },[])
   
   return (
-    <div>{profileData.name ? <FriendDetailsPage profileData={profileData} /> :<FriendLoading />}</div>
+    <div>{profileData.name ? <FriendDetailsPage profileData={profileData} /> : <FriendLoading />}</div>
   )
 }
 
