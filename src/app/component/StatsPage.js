@@ -35,7 +35,7 @@ const StatsPage = () => {
 
       {(data.call === 0 && data.video === 0 && data.text === 0)?
          <div className=" text-center mt-6 w-full mx-auto">
-          <h1 className="text-xl font-semibold">No Interaction Data Available</h1>
+          <h1 className="text-xl font-semibold mb-10">No Interaction Data Available</h1>
           <DotLottieReact src="/assets/Error.lottie" loop autoplay  className="w-60 md:w-100 mx-auto"/>
          </div>
          :
