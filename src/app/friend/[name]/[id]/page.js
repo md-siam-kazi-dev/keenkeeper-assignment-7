@@ -1,34 +1,14 @@
-'use client'
+import FriendPage from "@/app/component/FriendPage"
 
-import { DataContext } from "@/app/lib/context/DataContext";
-import { useParams } from "next/navigation"
-import { useContext, useEffect, useState } from "react";
-import FriendLoading from "./loading";
-import FriendDetailsPage from "@/app/component/FriendDetailsPage";
 
-const Friend = ({params}) => {
-    const [profileData,setProfileData] = useState({})
-   
-  const {id} = useParams();
-  useEffect(() => {
-    const loadProfile = async ()=>{
-        const res = await fetch('/data.json');
-        const data = await res.json();
-        let profile =  data.find(p => p.id === parseInt(id));
-        
-        setProfileData(profile)
-       
-
-    }
-    loadProfile()
-  },[])
-  
+const Friend = () => {
+    
     
   return (
     <div className="mt-30 min-h-[60vh]">
        
-       {profileData.name ? <FriendDetailsPage profileData={profileData} /> :<FriendLoading />}
-
+       
+       <FriendPage />
      
 
     </div>
