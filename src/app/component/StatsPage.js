@@ -3,6 +3,7 @@ import React, { useContext, useEffect } from "react";
 
 import { Pie, PieChart } from "recharts";
 import { DataContext } from "../lib/context/DataContext";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const StatsPage = () => {
   const { history } = useContext(DataContext);
@@ -32,7 +33,13 @@ const StatsPage = () => {
     <div className="w-full  border border-gray-100  shadow-md py-10 px-6">
       <h1 className="text-bold text-2xl">By Interaction Type</h1>
 
-      <div className="flex justify-center items-center">
+      {(data.call === 0 && data.video === 0 && data.text === 0)?
+         <div className=" text-center mt-6">
+          <h1 className="text-xl font-semibold">No Interaction Data Available</h1>
+          <DotLottieReact src="/assets/Error.lottie" loop autoplay  className="w-100 mx-auto"/>
+         </div>
+         :
+         <div className="flex justify-center items-center">
         <PieChart
         style={{
           width: "100%",
@@ -55,6 +62,7 @@ const StatsPage = () => {
         />
       </PieChart>
       </div>
+      }
 
       <div className="flex gap-7 mt-10 w-fit mx-auto">
         <div className="flex items-center gap-1">
