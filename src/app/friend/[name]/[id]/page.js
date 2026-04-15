@@ -25,7 +25,7 @@ const Friend = ({params}) => {
   
     
   return (
-    <div>
+    <div className="mt-20">
        
        {profileData.name ? <FriendDetailsPage profileData={profileData} /> :<FriendLoading />}
 

@@ -6,6 +6,7 @@ import { DataContext } from "../lib/context/DataContext";
 
 const FriendDetailsPage = ({ profileData }) => {
   const { historySetter} = useContext(DataContext);
+  window.scrollTo(1,1)
 
 //   helper function 
 
