@@ -30,13 +30,13 @@ const StatsPage = () => {
     { name: "text", value: data.text, fill: "#37A163" },
   ];
   return (
-    <div className="w-full  border border-gray-100  shadow-md py-10 px-6">
+    <div className="w-full  border border-gray-100  shadow-md py-10 px-4">
       <h1 className="text-bold text-2xl">By Interaction Type</h1>
 
       {(data.call === 0 && data.video === 0 && data.text === 0)?
-         <div className=" text-center mt-6">
+         <div className=" text-center mt-6 w-full mx-auto">
           <h1 className="text-xl font-semibold">No Interaction Data Available</h1>
-          <DotLottieReact src="/assets/Error.lottie" loop autoplay  className="w-100 mx-auto"/>
+          <DotLottieReact src="/assets/Error.lottie" loop autoplay  className="w-30 md:w-100 mx-auto"/>
          </div>
          :
          <div className="flex justify-center items-center">
