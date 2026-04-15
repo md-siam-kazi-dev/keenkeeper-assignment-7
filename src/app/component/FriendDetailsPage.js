@@ -8,7 +8,7 @@ const FriendDetailsPage = ({ profileData }) => {
   const { historySetter} = useContext(DataContext);
   useEffect(() => {
     window.scrollTo(0,0);
-  })
+  },[])
 
 //   helper function 
 
@@ -71,7 +71,7 @@ const FriendDetailsPage = ({ profileData }) => {
   };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 mt-10 mb-10 container-div lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 mt-10 mb-10 container-div lg:grid-cols-3 min-h-[60vh] gap-6">
       <div className="flex flex-col gap-3 mx-auto w-full">
         <div className="FDP-profile w-full">
           <Image

@@ -5,7 +5,7 @@ import HomeProfileContainer from "./component/HomeProfileContainer";
 
 export default function Home() {
   return (
-    <main className="container-div mt-30 sm:mt-30 lg:mt-30">
+    <main className="container-div mt-30 min-h-[50vh]">
       <HomeHeading />
       <HomeDashBoard />
       <HomeProfileContainer />
