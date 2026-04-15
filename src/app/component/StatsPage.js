@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext, useEffect } from "react";
 
-import { Pie, PieChart } from "recharts";
+import { Pie, PieChart, Tooltip } from "recharts";
 import { DataContext } from "../lib/context/DataContext";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
@@ -60,6 +60,7 @@ const StatsPage = () => {
           paddingAngle={5}
           dataKey="value"
         />
+        <Tooltip />
       </PieChart>
       </div>
       }
