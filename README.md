@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#  KeenKeeper — Keep Your Friendships Alive
+Description
 
-## Getting Started
+KeenKeeper is a modern web application designed to help users maintain and strengthen their friendships. It allows you to track important moments, stay connected, and never forget meaningful interactions with your friends.
 
-First, run the development server:
+Built with performance and user experience in mind, KeenKeeper offers a smooth, interactive interface with engaging animations and a responsive design.
+
+---
+
+##  Technologies Used
+
+* **Next.js** – For server-side rendering and optimized performance
+* **React.js** – Component-based UI development
+* **Tailwind CSS** – Fast and responsive styling
+* **Magic UI** – Beautiful UI components
+* **Lottie Animation** – Smooth and interactive animations
+
+---
+
+##  Key Features
+
+### 1.  Friendship Tracking System
+
+Keep track of important dates, interactions, and milestones with your friends so you never miss a moment.
+
+### 2.  Modern & Interactive UI
+
+A clean, responsive design powered by Tailwind CSS and enhanced with Lottie animations for a lively user experience.
+
+### 3.  Fast & SEO-Friendly Performance
+
+Built with Next.js to ensure better SEO optimization.
+
+
+---
+
+##  Installation
 
 ```bash
+git clone https://github.com/your-username/keenkeeper.git
+cd keenkeeper
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+##  Live Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+https://keenkeeperweb.netlify.app/
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
