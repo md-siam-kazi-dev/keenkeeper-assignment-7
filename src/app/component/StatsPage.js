@@ -5,7 +5,7 @@ import { Pie, PieChart, Tooltip } from "recharts";
 import { DataContext } from "../lib/context/DataContext";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
-const StatsPage = () => {
+const StatsPage = ({defaultIndex}) => {
   const { history } = useContext(DataContext);
 
   let data = {

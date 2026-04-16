@@ -149,7 +149,7 @@ const FriendDetailsPage = ({ profileData }) => {
             <p className="text-gray-400">Next Due</p>
           </div>
 
-          <div className="col-span-2 lg:col-span-3 border-gray-100 border shadow flex justify-between rounded-lg p-6">
+          <div className="col-span-2 lg:col-span-3 border-gray-100 border items-start shadow flex justify-between rounded-lg p-6">
             <div className="flex justify-between flex-col gap-6">
               <p className="text-xl font-bold">Relationship Goal</p>
               <p className="text-gray-400">
@@ -157,7 +157,7 @@ const FriendDetailsPage = ({ profileData }) => {
                 <span className="font-bold text-black">30 days</span>
               </p>
             </div>
-            <div className="font-bold">Edit</div>
+            <button className="font-bold">Edit</button>
           </div>
         </div>
 

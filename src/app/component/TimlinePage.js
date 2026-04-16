@@ -40,7 +40,7 @@ const TimlinePage = () => {
    if ( e === 'Name') {
       
       // short by name bubble short algo
-      for (let i = 0; i < history.length - 1; i++) {
+      for (let i = 0; i < (history.length - 1); i++) {
         for (let j = i + 1; j < history.length; j++) {
           if (temp[j].name < temp[j - 1].name) {
             console.log(temp[j])
